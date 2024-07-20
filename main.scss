@@ -26,8 +26,9 @@ h2 {
 }
 .draggable-elements,
 .droppable-elements {
-  // border: 2px solid black;
+  border: 2px solid black;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 10px;
   padding: 24px;
@@ -44,10 +45,15 @@ h2 {
 
 .image {
   width: 120px;
+  height: 110px;
 }
 
-.wrong {
+.wrong,
+.win {
   text-align: center;
   font-size: 2em;
   color: white;
+}
+.win {
+  margin-top: 70px;
 }

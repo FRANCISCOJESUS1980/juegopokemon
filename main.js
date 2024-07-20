@@ -1,5 +1,5 @@
 import './main.scss'
-const CARDS = 3
+const CARDS = 10
 
 for (let i = 1; i <= CARDS; i++) {
   let id = getRandomId(150)
@@ -50,6 +50,7 @@ async function searchPokemonById(id) {
   })
   let names = document.querySelectorAll('.names')
   let wrongMsg = document.querySelector('.wrong')
+  let points = 0
   names = [...names]
   names.forEach((name) => {
     name.addEventListener('dragover', (event) => {
@@ -59,11 +60,15 @@ async function searchPokemonById(id) {
       const draggableElementData = event.dataTransfer.getData('text')
       let pokemonElement = document.querySelector(`#${draggableElementData}`)
       if (event.target.innerText == draggableElementData) {
-        console.log('SI')
-        console.log(pokemonElement)
+        points++
+        event.target.innerHTML = ''
+        event.target.appendChild(pokemonElement)
         wrongMsg.innerText = ''
+
+        if (points == CARDS) {
+          draggableElements.innerHTML = `<p class="win">Ganaste!</p>`
+        }
       } else {
-        console.log('NO')
         wrongMsg.innerText = 'Ups!'
       }
     })
