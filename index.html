@@ -13,33 +13,28 @@
   <body>
     <main class="main-container">
       <h1>Adivina el Pokemon</h1>
-      <div class="draggable-elements">
-        <div class="pokemon">
-          <img
-            class="image"
-            src="/assets/imagenes.jgp/Business-OpenAI-Dall-E-3-heart.webp"
-            alt="imagen"
-          />
-        </div>
-        <div class="pokemon">
-          <img
-            class="image"
-            src="/assets/imagenes.jgp/Business-OpenAI-Dall-E-3-heart.webp"
-            alt="imagen"
-          />
-        </div>
-        <div class="pokemon">
-          <img
-            class="image"
-            src="/assets/imagenes.jgp/Business-OpenAI-Dall-E-3-heart.webp"
-            alt="imagen"
-          />
-        </div>
+
+      <div id="name-input-container">
+        <h2>Introduce tu nombre</h2>
+        <input type="text" id="player-name" placeholder="Tu nombre" />
+        <button id="start-game">Empezar</button>
       </div>
-      <h2>Arrastra y Suelta</h2>
-      <div class="droppable-elements"></div>
+
+      <div id="difficulty-selection" style="display: none">
+        <h2>Selecciona la dificultad</h2>
+        <button id="easy">Fácil</button>
+        <button id="medium">Medio</button>
+        <button id="hard">Difícil</button>
+      </div>
+
+      <div class="game-container" style="display: none">
+        <div class="draggable-elements"></div>
+        <h2>Arrastra y Suelta</h2>
+        <div class="droppable-elements"></div>
+      </div>
     </main>
     <p class="wrong"></p>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>

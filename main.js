@@ -1,6 +1,7 @@
 import './main.scss'
-const CARDS = 10
-
+import './componentes/difficulty'
+const CARDS = 50
+/*
 for (let i = 1; i <= CARDS; i++) {
   let id = getRandomId(150)
   searchPokemonById(id)
@@ -74,3 +75,4 @@ async function searchPokemonById(id) {
     })
   })
 }
+*/

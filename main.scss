@@ -13,16 +13,49 @@ body {
   background-size: cover;
 }
 .main-container {
-  /* border: 2px solid white;*/
   width: 90%;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: center;
 }
 h1,
 h2 {
   text-align: center;
+}
+#name-input-container {
+  margin: 20px 0px;
+}
+
+#name-input-container input {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+#name-input-container button {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#difficulty-selection {
+  margin: 20px 0;
+}
+
+#difficulty-selection button {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .draggable-elements,
 .droppable-elements {
