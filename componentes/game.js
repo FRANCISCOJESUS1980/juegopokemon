@@ -8,15 +8,11 @@ export async function startGame(cardCount, allowDuplicates) {
   while (pokemonSearched.length < cardCount) {
     const id = getRandomId(150)
 
-    if (!allowDuplicates) {
-      if (pokemonIds.has(id)) continue
-    }
+    if (!allowDuplicates && pokemonIds.has(id)) continue
 
     const pokemon = await searchPokemonById(id)
 
-    if (!allowDuplicates) {
-      if (pokemonNames.has(pokemon.name)) continue
-    }
+    if (!allowDuplicates && pokemonNames.has(pokemon.name)) continue
 
     pokemonSearched.push(pokemon)
     pokemonNames.add(pokemon.name)
@@ -24,7 +20,9 @@ export async function startGame(cardCount, allowDuplicates) {
   }
 
   const shuffledPokemon = [...pokemonSearched].sort(() => Math.random() - 0.5)
-  const shuffledPokemonNames = [...pokemonNames].sort(() => Math.random() - 0.5)
+  const shuffledPokemonNames = Array.from(pokemonNames).sort(
+    () => Math.random() - 0.5
+  )
 
   draggableElements.innerHTML = ''
   droppableElements.innerHTML = ''

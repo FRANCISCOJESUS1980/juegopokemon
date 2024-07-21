@@ -1,6 +1,7 @@
 import './main.scss'
 import './componentes/difficulty'
 const CARDS = 50
+
 /*
 for (let i = 1; i <= CARDS; i++) {
   let id = getRandomId(150)
