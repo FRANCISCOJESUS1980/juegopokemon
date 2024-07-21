@@ -1,4 +1,4 @@
-import { startGame } from './game.js'
+import { startGame } from './startGame'
 
 document.addEventListener('DOMContentLoaded', () => {
   const nameInputContainer = document.getElementById('name-input-container')
@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const mediumBtn = document.getElementById('medium')
   const hardBtn = document.getElementById('hard')
 
-  // Check if the user's name is already stored in localStorage
   const storedName = localStorage.getItem('playerName')
   if (storedName) {
     nameInputContainer.style.display = 'none'
@@ -28,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  easyBtn.addEventListener('click', () => setDifficulty(5, true))
-  mediumBtn.addEventListener('click', () => setDifficulty(15, true))
+  easyBtn.addEventListener('click', () => setDifficulty(5, false))
+  mediumBtn.addEventListener('click', () => setDifficulty(15, false))
   hardBtn.addEventListener('click', () => setDifficulty(30, false))
 })
 

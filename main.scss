@@ -90,3 +90,16 @@ h2 {
 .win {
   margin-top: 70px;
 }
+.score,
+.highest-score {
+  text-align: center;
+  margin-top: 10px;
+}
+#back-to-menu {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
