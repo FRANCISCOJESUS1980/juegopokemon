@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import './componentes/difficulty.scss';
+@import './componentes/startGame.scss';
+@import './componentes/score.scss';
 
 * {
   margin: 0;
@@ -23,6 +26,7 @@ body {
 h1,
 h2 {
   text-align: center;
+  margin: 5px;
 }
 #name-input-container {
   margin: 20px 0px;
@@ -41,65 +45,6 @@ h2 {
   font-family: 'Press Start 2P', system-ui;
   font-size: 16px;
   padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#difficulty-selection {
-  margin: 20px 0;
-}
-
-#difficulty-selection button {
-  font-family: 'Press Start 2P', system-ui;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.draggable-elements,
-.droppable-elements {
-  border: 2px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 24px;
-  min-height: 230px;
-}
-.names {
-  border: 3px dashed brown;
-  min-width: 100px;
-  padding: 0 10px;
-  height: 100px;
-  display: grid;
-  place-content: center;
-}
-
-.image {
-  width: 120px;
-  height: 110px;
-}
-
-.wrong,
-.win {
-  text-align: center;
-  font-size: 2em;
-  color: white;
-}
-.win {
-  margin-top: 70px;
-}
-.score,
-.highest-score {
-  text-align: center;
-  margin-top: 10px;
-}
-#back-to-menu {
-  font-family: 'Press Start 2P', system-ui;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 20px;
   cursor: pointer;
   border-radius: 5px;
 }
