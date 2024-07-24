@@ -21,3 +21,24 @@
   width: 120px;
   height: 110px;
 }
+.game-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.volver,
+.jugarDeNuevo {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.volver:hover,
+.jugarDeNuevo:hover {
+  padding: 10px 35px;
+  background-color: orange;
+  color: white;
+}
