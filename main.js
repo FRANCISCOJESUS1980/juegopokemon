@@ -30,8 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.removeEventListener('click', startMusic)
   }
 
-  document.addEventListener('click', startMusic)
-
   games.forEach((game) => {
     game.addEventListener('click', (event) => {
       event.preventDefault()
