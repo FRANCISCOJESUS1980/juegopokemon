@@ -1,0 +1,18 @@
+#backToMenuBtn {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 20px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  justify-content: center;
+}
+
+#backToMenuBtn:hover {
+  background-color: orange;
+  padding: 15px 35px;
+}

@@ -3,6 +3,7 @@ import './componentes/difficulty'
 import './componentes/score'
 import './componentes/startGame'
 import './componentes/botones'
+import './componentes/btnvolverMenuPrin'
 
 document.addEventListener('DOMContentLoaded', () => {
   const games = document.querySelectorAll('.game')
