@@ -1,22 +1,22 @@
 .wrong,
 .win {
   text-align: center;
-  font-size: 2em;
-  color: white;
+  font-size: $secundary-font-size;
+  color: $primary-color;
 }
 .win {
-  margin-top: 70px;
+  margin-top: $primary-margin-top;
 }
 .score,
 .highest-score {
   text-align: center;
-  margin-top: 10px;
+  margin-top: $secundary-margin-top;
 }
 #back-to-menu {
   font-family: 'Press Start 2P', system-ui;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 20px;
+  font-size: $primary-font-size;
+  padding: $secundary-padding;
+  margin: $cuarto-margin;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: $primary-border-radius;
 }

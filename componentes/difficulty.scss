@@ -1,16 +1,16 @@
 #difficulty-selection {
-  margin: 20px 0;
+  margin: $tercer-margin;
 }
 
 #difficulty-selection button {
   font-family: 'Press Start 2P', system-ui;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 20px;
+  font-size: $primary-font-size;
+  padding: $secundary-padding;
+  margin: $cuarto-margin;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: $primary-border-radius;
 }
 
 #difficulty-selection button:hover {
-  background-color: orange;
+  background-color: $secundary-background-color;
 }

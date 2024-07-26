@@ -1,17 +1,17 @@
 .draggable-elements,
 .droppable-elements {
-  border: 2px solid black;
+  border: $primary-border;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 10px;
-  padding: 24px;
+  gap: $secundary-gap;
+  padding: $tercer-padding;
   min-height: 230px;
 }
 .names {
-  border: 3px dashed brown;
+  border: $secundary-border;
   min-width: 100px;
-  padding: 0 10px;
+  padding: $cuarto-padding;
   height: 100px;
   display: grid;
   place-content: center;
@@ -29,17 +29,17 @@
 .volver,
 .jugarDeNuevo {
   font-family: 'Press Start 2P', system-ui;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 20px;
+  font-size: $primary-font-size;
+  padding: $secundary-padding;
+  margin: $cuarto-margin;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: $primary-border-radius;
   transition: background-color 0.3s;
 }
 
 .volver:hover,
 .jugarDeNuevo:hover {
-  padding: 10px 35px;
-  background-color: orange;
-  color: white;
+  padding: $tercer-padding;
+  background-color: $secundary-background-color;
+  color: $primary-color;
 }

@@ -1,17 +1,17 @@
 #backToMenuBtn {
   font-family: 'Press Start 2P', system-ui;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 20px 40px;
+  font-size: $primary-font-size;
+  padding: $secundary-padding;
+  margin: $quinto-margin;
   cursor: pointer;
-  border-radius: 5px;
-  background-color: white;
+  border-radius: $primary-border-radius;
+  background-color: $primary-color;
   cursor: pointer;
   transition: background-color 0.3s;
   justify-content: center;
 }
 
 #backToMenuBtn:hover {
-  background-color: orange;
-  padding: 15px 35px;
+  background-color: $secundary-background-color;
+  padding: $tercer-padding;
 }
